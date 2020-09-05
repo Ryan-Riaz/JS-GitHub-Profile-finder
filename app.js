@@ -5,7 +5,8 @@ let search = document.getElementById("search");
 const API_URL = "https://api.github.com/users/";
 
 async function getUser(user) {
-	let resp = await fetch(API_URL + user);
+	let name = user.split(" ").join("");
+	let resp = await fetch(API_URL + name);
 	let resData = await resp.json();
 
 	createProfile(resData);
@@ -13,7 +14,8 @@ async function getUser(user) {
 }
 
 async function createRepos(user) {
-	let resp = await fetch(API_URL + user + "/repos");
+	let name = user.split(" ").join("");
+	let resp = await fetch(API_URL + name + "/repos");
 	let resData = await resp.json();
 
 	addToRepos(resData);
