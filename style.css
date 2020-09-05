@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+	font-family: "Poppins", sans-serif;
+}
+.container {
+	height: 100vh;
+	background-image: radial-gradient(
+		circle farthest-corner at 10% 20%,
+		rgba(163, 175, 243, 1) 0%,
+		rgba(220, 182, 232, 1) 100.2%
+	);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.box {
+	overflow: hidden;
+	background: linear-gradient(75deg, #443874, #6c5a9a);
+	width: 800px;
+	height: 550px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	border-radius: 1rem;
+	box-shadow: 5px 5px #7a57b7db, 10px 10px rgb(103 58 183 / 52%),
+		15px 15px rgb(172 147 216), 20px 20px rgb(186 160 232),
+		25px 25px rgb(202 173 255 / 69%);
+}
+.box h3 {
+	font-size: 4rem;
+	text-align: center;
+	color: #eee;
+	margin: 2rem 0;
+}
+.box #search {
+	display: inline-block;
+	width: 300px;
+	margin-top: 1rem;
+	padding: 1.2rem 2rem;
+	font-size: 1.4rem;
+	border-radius: 0.5rem;
+	border: 1px solid #e5c1fb;
+	outline: none;
+	background: #6c5a9a;
+	color: #fff;
+}
+
+#search::placeholder {
+	color: #ccc;
+}
+#search:focus {
+	box-shadow: 0px 2px 1px #655493b3, 0 2px 15px #e5c1fb;
+	border: 1px solid transparent;
+}
+.profile {
+	max-width: 600px;
+	padding-top: 2rem;
+	margin: auto;
+	color: #ddd;
+	font-size: 1.6rem;
+	display: flex;
+}
+.profile .profileImg {
+	width: 18rem;
+	border-radius: 20%;
+	padding-right: 2rem;
+}
+.content h4 {
+	font-size: 2.4rem;
+	padding-bottom: 1rem;
+	color: #fff;
+	font-weight: 400;
+}
+.content p {
+	line-height: 1.6;
+	margin-bottom: 1rem;
+	font-size: 1.4rem;
+}
+.content ul {
+	list-style: none;
+	display: flex;
+}
+.content ul li strong {
+	padding-left: 1rem;
+}
+.repos {
+	max-width: 500px;
+	margin: auto;
+}
+.repos .repo {
+	color: #ddd;
+	text-decoration: none;
+	background-color: #57008d;
+	font-size: 1rem;
+	padding: 1rem;
+	margin-right: 0.5rem;
+	margin-bottom: 0.5rem;
+	display: inline-block;
+}
